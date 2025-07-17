@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script>
+</head>
+<body>
+  <div class="container">
+    <ul>
+<li class="ch">一幅史诗般的奇幻山脉日落景观，天空被紫色和橙色渲染，远古城堡耸立在山顶，细节丰富，魔幻光芒，超现实，电影感，8K分辨率。</li>
+<li class="en">An epic fantasy landscape of mountains at sunset, sky painted with purples and oranges, an ancient castle perched on a peak, rich details, magical glow, surreal, cinematic, 8K resolution.</li>
+</ul>
+<hr/><ul>
+<li class="ch">赛博朋克风格的未来城市夜景，霓虹灯招牌在潮湿的街道上反射，飞行汽车穿梭其间，雨滴效果，高科技，低光照，高对比度，超细节，电影级。</li>
+<li class="en">Cyberpunk futuristic city night scene, neon signs reflecting on wet streets, flying cars soaring through, rain effects, high-tech, low light, high contrast, ultra-detailed, cinematic quality.</li>
+</ul>
+<hr/><ul>
+<li class="ch">一只雄伟的东方龙在云雾缭绕的山谷中翱翔，金色的鳞片在阳光下闪耀，周围是瀑布和茂盛的植被，艺术插画风格，细节丰富，梦幻般的光线。</li>
+<li class="en">A majestic oriental dragon soaring through a cloud-filled valley, golden scales glistening in sunlight, surrounded by waterfalls and lush vegetation, artistic illustration style, rich details, dreamy lighting.</li>
+</ul>
+<hr/><ul>
+<li class="ch">充满魔法的森林内部，古老的树木发出柔和的光芒，仙女在发光的花朵间飞舞，迷雾弥漫，童话般氛围，梦幻色彩，超现实，8K，电影光效。</li>
+<li class="en">Interior of an enchanted forest, ancient trees emitting soft light, fairies fluttering among glowing flowers, pervasive mist, fairytale atmosphere, dreamy colors, surreal, 8K, cinematic lighting.</li>
+</ul>
+<hr/><ul>
+<li class="ch">一位宇航员站在荒芜的红色星球上，背景是巨大的蓝色星云和遥远的星系，头盔反射着宇宙，孤独感，广阔视角，高科技，电影质感，超细节。</li>
+<li class="en">An astronaut standing on a barren red planet, with a massive blue nebula and distant galaxy in the background, helmet reflecting the cosmos, sense of solitude, vast perspective, high-tech, cinematic quality, ultra-detailed.</li>
+</ul>
+<hr/><ul>
+<li class="ch">一位蒸汽朋克风格的发明家在他的工作室里，周围是复杂的齿轮、管道和闪烁的灯泡，复古机械美学，暖色调，细节丰富的服装，黄铜光泽。</li>
+<li class="en">A steampunk inventor in his workshop, surrounded by intricate gears, pipes, and flickering light bulbs, vintage mechanical aesthetic, warm tones, richly detailed attire, brass gleam.</li>
+</ul>
+<hr/><ul>
+<li class="ch">沉没在深海中的古老城市遗迹，被发光的海洋生物围绕，阳光透过水面洒下，光线折射，神秘而宁静，水下粒子，高分辨率，梦幻。</li>
+<li class="en">Ancient city ruins submerged in the deep ocean, surrounded by glowing marine creatures, sunlight filtering through the water surface, light refraction, mysterious and serene, underwater particles, high resolution, dreamlike.</li>
+</ul>
+<hr/><ul>
+<li class="ch">一幅年轻女性的肖像，面部被抽象的光线和色彩涂抹，充满活力和情感，半身像，艺术摄影，超现实主义，柔焦，高分辨率，表现主义风格。</li>
+<li class="en">Portrait of a young woman, her face painterly with abstract light and colors, full of vibrancy and emotion, half-body shot, artistic photography, surrealism, soft focus, high resolution, expressionistic style.</li>
+</ul>
+<hr/><ul>
+<li class="ch">废弃的城市街道，被植物重新占据的摩天大楼，破败的汽车，末日后的荒凉景象，黄昏，寂静，阴郁的氛围，写实主义，电影感，高细节。</li>
+<li class="en">Abandoned city street, skyscrapers reclaimed by vegetation, ruined cars, post-apocalyptic desolate scene, dusk, quiet, somber atmosphere, realism, cinematic feel, high detail.</li>
+</ul>
+<hr/><ul>
+<li class="ch">一间充满魔法的书店或图书馆，书架高耸入云，发光的魔法书籍漂浮在空中，柔和的烛光，尘埃粒子，复古而神秘，细节丰富，电影光照。</li>
+<li class="en">A magical bookstore or library, towering bookshelves reaching into the sky, glowing spellbooks floating in mid-air, soft candlelight, dust motes, vintage and mysterious, rich details, cinematic lighting.</li>
+</ul>
+<hr/>
+  </div>
+</body>
+</html>
+<style>
+  /* 全局样式 */
+  body {
+      font-family: 'Inter', sans-serif; /* 使用 Inter 字体保持简洁外观 */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      /* 调整背景渐变色，使其与内容区域有更好区分度 */
+      background: linear-gradient(to bottom right, #e0f2f7, #e8f5e9); /* 从浅蓝色到浅绿色的渐变 */
+      margin: 0; /* 确保没有默认外边距 */
+  }
+
+  /* 容器样式 */
+  .container {
+      background-color: #ffffff; /* 对应 Tailwind 的 bg-white */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 对应 Tailwind 的 shadow-lg */
+      border-radius: 0.75rem; /* 对应 Tailwind 的 rounded-xl */
+      padding: 2rem; /* 对应 Tailwind 的 p-8 */
+      max-width: 70vw; /* 将最大宽度设置为屏幕宽度的70% */
+      width: 100%; /* 确保在小屏幕上也能自适应 */
+  }
+
+  /* 标题样式 */
+  h1 {
+      font-size: 1.875rem; /* 对应 Tailwind 的 text-3xl */
+      font-weight: 600; /* 对应 Tailwind 的 font-semibold */
+      color: #4a5568; /* 对应 Tailwind 的 text-gray-700 */
+      margin-bottom: 1.5rem; /* 对应 Tailwind 的 mb-6 */
+      text-align: center; /* 对应 Tailwind 的 text-center */
+  }
+
+  /* 列表容器样式 */
+  ul {
+      list-style: none; /* 移除默认列表点 */
+      padding: 0;
+      margin: 0;
+  }
+
+  /* 列表项样式 */
+  li {
+      background-color: #f9fafb; /* 对应 Tailwind 的 bg-gray-50 */
+      transition: background-color 0.2s ease; /* 对应 Tailwind 的 transition-colors duration-200 */
+      border-radius: 0.5rem; /* 对应 Tailwind 的 rounded-lg */
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      display: flex; /* 对应 Tailwind 的 flex */
+      justify-content: space-between; /* 对应 Tailwind 的 justify-between */
+      align-items: center; /* 对应 Tailwind 的 items-center */
+      margin-bottom: 1rem; /* 对应 Tailwind 的 space-y-4，为每个 li 增加间距 */
+  }
+
+  li:last-child {
+      margin-bottom: 0; /* 最后一个 li 不加底部间距 */
+  }
+
+  li:hover {
+      background-color: #f3f4f6; /* 对应 Tailwind 的 hover:bg-gray-100 */
+  }
+
+  /* 中文文本样式 */
+  .ch {
+      font-size: 1.125rem; /* 对应 Tailwind 的 text-lg */
+      font-weight: 500; /* 对应 Tailwind 的 font-medium */
+      color: #2d3748; /* 对应 Tailwind 的 text-gray-800 */
+  }
+
+  /* 英文文本样式 */
+  .en {
+      font-size: 1rem; /* 对应 Tailwind 的 text-base */
+      color: #a0aec0; /* 对应 Tailwind 的 text-gray-500 */
+  }
+</style>
+
