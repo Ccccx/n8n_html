@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小清新风格页面</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script>
+    <style>
+        /* 全局样式 */
+        body {
+            font-family: 'Inter', sans-serif; /* 使用 Inter 字体保持简洁外观 */
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem; /* 对应 Tailwind 的 p-4 */
+            /* 调整背景渐变色，使其与内容区域有更好区分度 */
+            background: linear-gradient(to bottom right, #e0f2f7, #e8f5e9); /* 从浅蓝色到浅绿色的渐变 */
+            margin: 0; /* 确保没有默认外边距 */
+            overflow: hidden; /* 防止气泡溢出时出现滚动条 */
+            position: relative; /* 为气泡的绝对定位提供参考 */
+        }
+
+        /* 容器样式 */
+        .container {
+            background-color: #ffffff; /* 对应 Tailwind 的 bg-white */
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 对应 Tailwind 的 shadow-lg */
+            border-radius: 0.75rem; /* 对应 Tailwind 的 rounded-xl */
+            padding: 2rem; /* 对应 Tailwind 的 p-8 */
+            max-width: 70vw; /* 将最大宽度设置为屏幕宽度的70% */
+            width: 100%; /* 确保在小屏幕上也能自适应 */
+            z-index: 10; /* 确保内容在气泡之上 */
+            position: relative; /* 确保内容在气泡之上 */
+        }
+
+        /* 标题样式 */
+        h1 {
+            font-size: 1.875rem; /* 对应 Tailwind 的 text-3xl */
+            font-weight: 600; /* 对应 Tailwind 的 font-semibold */
+            color: #4a5568; /* 对应 Tailwind 的 text-gray-700 */
+            margin-bottom: 1.5rem; /* 对应 Tailwind 的 mb-6 */
+            text-align: center; /* 对应 Tailwind 的 text-center */
+        }
+
+        /* 列表容器样式 */
+        ul {
+            list-style: none; /* 移除默认列表点 */
+            padding: 0;
+            margin: 0;
+        }
+
+        /* 列表项样式 */
+        li {
+            background-color: #f9fafb; /* 对应 Tailwind 的 bg-gray-50 */
+            transition: background-color 0.2s ease; /* 对应 Tailwind 的 transition-colors duration-200 */
+            border-radius: 0.5rem; /* 对应 Tailwind 的 rounded-lg */
+            padding: 1rem; /* 对应 Tailwind 的 p-4 */
+            display: flex; /* 对应 Tailwind 的 flex */
+            justify-content: space-between; /* 对应 Tailwind 的 justify-between */
+            align-items: center; /* 对应 Tailwind 的 items-center */
+            margin-bottom: 1rem; /* 对应 Tailwind 的 space-y-4，为每个 li 增加间距 */
+        }
+
+        li:last-child {
+            margin-bottom: 0; /* 最后一个 li 不加底部间距 */
+        }
+
+        li:hover {
+            background-color: #f3f4f6; /* 对应 Tailwind 的 hover:bg-gray-100 */
+        }
+
+        /* 中文文本样式 */
+        .ch {
+            font-size: 1.125rem; /* 对应 Tailwind 的 text-lg */
+            font-weight: 500; /* 对应 Tailwind 的 font-medium */
+            color: #2d3748; /* 对应 Tailwind 的 text-gray-800 */
+        }
+
+        /* 英文文本样式 */
+        .en {
+            font-size: 1rem; /* 对应 Tailwind 的 text-base */
+            color: #a0aec0; /* 对应 Tailwind 的 text-gray-500 */
+        }
+
+        /* 气泡样式 */
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.5); /* 半透明白色 */
+            border-radius: 50%;
+            pointer-events: none; /* 确保气泡不影响鼠标事件 */
+            animation: floatUp ease-in infinite; /* 漂浮动画 */
+            opacity: 0; /* 初始透明度为0 */
+            will-change: transform, opacity; /* 优化动画性能 */
+            z-index: 1; /* 确保气泡在内容下方 */
+        }
+
+        /* 气泡漂浮动画 */
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) translateX(0) scale(0.5);
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) translateX(var(--random-x)) scale(1.2); /* 向上漂浮并轻微左右移动 */
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>清新展示</h1>
+        <ul>
+            <li>
+                <span class="ch">中文展示</span>
+                <span class="en">english</span>
+            </li>
+            <li>
+                <span class="ch">中文展示</span>
+                <span class="en">english</span>
+            </li>
+            <li>
+                <span class="ch">中文展示</span>
+                <span class="en">english</span>
+            </li>
+            <li>
+                <span class="ch">中文展示</span>
+                <span class="en">english</span>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        // 当页面加载完成后执行
+        window.onload = function() {
+            // 获取 body 元素，用于添加气泡
+            const body = document.body;
+
+            // 创建单个气泡的函数
+            function createBubble() {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+
+                // 随机气泡大小 (20px 到 60px)
+                const size = Math.random() * 40 + 20;
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+
+                // 随机初始水平位置 (从屏幕左侧到右侧)
+                const startX = Math.random() * window.innerWidth;
+                bubble.style.left = `${startX}px`;
+
+                // 随机动画持续时间 (8秒到20秒)
+                const duration = Math.random() * 12 + 8;
+                bubble.style.animationDuration = `${duration}s`;
+
+                // 随机动画延迟，使气泡出现时间错开
+                bubble.style.animationDelay = `${Math.random() * 5}s`;
+
+                // 设置一个 CSS 变量，用于在动画中实现随机的水平位移
+                // 气泡在向上漂浮时会轻微左右晃动
+                const randomXOffset = (Math.random() - 0.5) * 200; // -100px 到 100px
+                bubble.style.setProperty('--random-x', `${randomXOffset}px`);
+
+                // 将气泡添加到 body
+                body.appendChild(bubble);
+
+                // 动画结束后移除气泡，防止 DOM 元素过多影响性能
+                bubble.addEventListener('animationend', () => {
+                    bubble.remove();
+                });
+            }
+
+            // 每隔一段时间创建新的气泡
+            // 例如，每 0.5 到 2 秒创建一个气泡
+            setInterval(() => {
+                createBubble();
+            }, Math.random() * 1500 + 500); // 随机间隔 0.5 到 2 秒
+        };
+    </script>
+</body>
+</html>
