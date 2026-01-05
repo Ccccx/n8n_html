@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script>
+</head>
+<body>
+  <div class="container">
+    <ul>
+<li class="ch">一位身着华美汉服的古装美女，在盛开的桃花林中漫步，眼神温柔，背景是远山如黛，晨光熹微，展现古典韵味与自然和谐。</li>
+<li class="en">An ancient Chinese beauty dressed in magnificent Hanfu, strolling through a blooming peach blossom forest, with gentle eyes, against a backdrop of distant ink-wash mountains and soft morning light, showcasing classical charm and natural harmony.</li>
+</ul>
+<hr/>
+  </div>
+</body>
+</html>
+<style>
+  /* 全局样式 */
+  body {
+      font-family: 'Inter', sans-serif; /* 使用 Inter 字体保持简洁外观 */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      /* 调整背景渐变色，使其与内容区域有更好区分度 */
+      background: linear-gradient(to bottom right, #e0f2f7, #e8f5e9); /* 从浅蓝色到浅绿色的渐变 */
+      margin: 0; /* 确保没有默认外边距 */
+  }
+
+  /* 容器样式 */
+  .container {
+      background-color: #ffffff; /* 对应 Tailwind 的 bg-white */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 对应 Tailwind 的 shadow-lg */
+      border-radius: 0.75rem; /* 对应 Tailwind 的 rounded-xl */
+      padding: 2rem; /* 对应 Tailwind 的 p-8 */
+      max-width: 70vw; /* 将最大宽度设置为屏幕宽度的70% */
+      width: 100%; /* 确保在小屏幕上也能自适应 */
+  }
+
+  /* 标题样式 */
+  h1 {
+      font-size: 1.875rem; /* 对应 Tailwind 的 text-3xl */
+      font-weight: 600; /* 对应 Tailwind 的 font-semibold */
+      color: #4a5568; /* 对应 Tailwind 的 text-gray-700 */
+      margin-bottom: 1.5rem; /* 对应 Tailwind 的 mb-6 */
+      text-align: center; /* 对应 Tailwind 的 text-center */
+  }
+
+  /* 列表容器样式 */
+  ul {
+      list-style: none; /* 移除默认列表点 */
+      padding: 0;
+      margin: 0;
+  }
+
+  /* 列表项样式 */
+  li {
+      background-color: #f9fafb; /* 对应 Tailwind 的 bg-gray-50 */
+      transition: background-color 0.2s ease; /* 对应 Tailwind 的 transition-colors duration-200 */
+      border-radius: 0.5rem; /* 对应 Tailwind 的 rounded-lg */
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      display: flex; /* 对应 Tailwind 的 flex */
+      justify-content: space-between; /* 对应 Tailwind 的 justify-between */
+      align-items: center; /* 对应 Tailwind 的 items-center */
+      margin-bottom: 1rem; /* 对应 Tailwind 的 space-y-4，为每个 li 增加间距 */
+  }
+
+  li:last-child {
+      margin-bottom: 0; /* 最后一个 li 不加底部间距 */
+  }
+
+  li:hover {
+      background-color: #f3f4f6; /* 对应 Tailwind 的 hover:bg-gray-100 */
+  }
+
+  /* 中文文本样式 */
+  .ch {
+      font-size: 1.125rem; /* 对应 Tailwind 的 text-lg */
+      font-weight: 500; /* 对应 Tailwind 的 font-medium */
+      color: #2d3748; /* 对应 Tailwind 的 text-gray-800 */
+  }
+
+  /* 英文文本样式 */
+  .en {
+      font-size: 1rem; /* 对应 Tailwind 的 text-base */
+      color: #a0aec0; /* 对应 Tailwind 的 text-gray-500 */
+  }
+</style>
+
