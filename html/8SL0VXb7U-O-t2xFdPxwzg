@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script>
+</head>
+<body>
+  <div class="container">
+    <ul>
+<li class="ch">一个充满活力和色彩的卡通动物聚会场景，各种可爱的拟人化小动物，如戴着派对帽的兔子、穿着背带裤的熊和打领结的狐狸，它们正在一座梦幻般的森林树屋里举行狂欢派对。周围装饰着五彩斑斓的气球、闪烁的彩灯和悬挂的彩带。餐桌上摆满了诱人的水果拼盘和精致的甜点，阳光透过繁茂的树叶缝隙洒下斑驳的光影，整体风格呈现出迪士尼动画的高清质感，色彩鲜艳明快，充满欢乐和温馨的氛围。</li>
+<li class="en">A vibrant and colorful cartoon animal party scene featuring various cute anthropomorphic animals, such as rabbits wearing party hats, bears in overalls, and foxes in bow ties, throwing a lively celebration in a dreamy forest treehouse. The surroundings are decorated with colorful balloons, twinkling fairy lights, and hanging streamers. The table is filled with tempting fruit platters and exquisite desserts, with sunlight filtering through the lush leaves to cast dappled shadows. The overall style reflects the high-definition quality of Disney animation, featuring bright, vivid colors and an atmosphere filled with joy and warmth.</li>
+</ul>
+<hr/><ul>
+<li class="ch">在一片广阔的草地上，一群Q版风格的动物朋友正在举行一场盛大的野餐聚会。长颈鹿戴着太阳镜在分发零食，小松鼠在树桩上演奏小提琴，还有跳着踢踏舞的企鹅。画面采用了柔和的色彩渲染，呈现出治愈系的日式动漫风格。背景是蓝天白云和竞相开放的野花，构图广阔且充满细节，强调角色间的互动与友谊，光线柔和细腻，仿佛置身于一个童话般的乌托邦世界，极具视觉冲击力与艺术感。</li>
+<li class="en">On a vast meadow, a group of Q-version animal friends are holding a grand picnic party. A giraffe wearing sunglasses is handing out snacks, a small squirrel is playing the violin on a stump, and penguins are performing a tap dance. The image uses soft color rendering, presenting a healing Japanese anime style. The background features a blue sky with white clouds and blooming wildflowers, with a wide composition full of details that emphasize interaction and friendship among characters. The lighting is soft and delicate, making it feel like a fairy-tale utopia, with strong visual impact and artistic flair.</li>
+</ul>
+<hr/><ul>
+<li class="ch">一个热闹非凡的深夜森林舞会，主角是一群拟人化的森林动物。它们穿着精致的礼服，在萤火虫的光芒照耀下跳着欢快的舞蹈。刺猬穿着小礼裙，猫头鹰指挥着乐队，浣熊负责提供美味的饮品。画面采用3D渲染效果，呈现出皮克斯风格的精细纹理。背景是深邃神秘的森林，点缀着发光的蘑菇和魔法光斑，空气中漂浮着亮晶晶的粉尘，营造出一种奇幻、灵动且充满节日气息的视觉盛宴。</li>
+<li class="en">A lively late-night forest ball featuring a group of anthropomorphic woodland animals. They are dressed in exquisite evening gowns and suits, dancing joyfully under the glow of fireflies. A hedgehog wears a small party dress, an owl conducts the orchestra, and a raccoon serves delicious drinks. The image uses 3D rendering effects, showcasing fine textures in a Pixar style. The background is a deep, mysterious forest dotted with glowing mushrooms and magical light spots, with sparkling dust floating in the air, creating a fantastical, lively, and festive visual feast.</li>
+</ul>
+<hr/>
+  </div>
+</body>
+</html>
+<style>
+  /* 全局样式 */
+  body {
+      font-family: 'Inter', sans-serif; /* 使用 Inter 字体保持简洁外观 */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      /* 调整背景渐变色，使其与内容区域有更好区分度 */
+      background: linear-gradient(to bottom right, #e0f2f7, #e8f5e9); /* 从浅蓝色到浅绿色的渐变 */
+      margin: 0; /* 确保没有默认外边距 */
+  }
+
+  /* 容器样式 */
+  .container {
+      background-color: #ffffff; /* 对应 Tailwind 的 bg-white */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 对应 Tailwind 的 shadow-lg */
+      border-radius: 0.75rem; /* 对应 Tailwind 的 rounded-xl */
+      padding: 2rem; /* 对应 Tailwind 的 p-8 */
+      max-width: 70vw; /* 将最大宽度设置为屏幕宽度的70% */
+      width: 100%; /* 确保在小屏幕上也能自适应 */
+  }
+
+  /* 标题样式 */
+  h1 {
+      font-size: 1.875rem; /* 对应 Tailwind 的 text-3xl */
+      font-weight: 600; /* 对应 Tailwind 的 font-semibold */
+      color: #4a5568; /* 对应 Tailwind 的 text-gray-700 */
+      margin-bottom: 1.5rem; /* 对应 Tailwind 的 mb-6 */
+      text-align: center; /* 对应 Tailwind 的 text-center */
+  }
+
+  /* 列表容器样式 */
+  ul {
+      list-style: none; /* 移除默认列表点 */
+      padding: 0;
+      margin: 0;
+  }
+
+  /* 列表项样式 */
+  li {
+      background-color: #f9fafb; /* 对应 Tailwind 的 bg-gray-50 */
+      transition: background-color 0.2s ease; /* 对应 Tailwind 的 transition-colors duration-200 */
+      border-radius: 0.5rem; /* 对应 Tailwind 的 rounded-lg */
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      display: flex; /* 对应 Tailwind 的 flex */
+      justify-content: space-between; /* 对应 Tailwind 的 justify-between */
+      align-items: center; /* 对应 Tailwind 的 items-center */
+      margin-bottom: 1rem; /* 对应 Tailwind 的 space-y-4，为每个 li 增加间距 */
+  }
+
+  li:last-child {
+      margin-bottom: 0; /* 最后一个 li 不加底部间距 */
+  }
+
+  li:hover {
+      background-color: #f3f4f6; /* 对应 Tailwind 的 hover:bg-gray-100 */
+  }
+
+  /* 中文文本样式 */
+  .ch {
+      font-size: 1.125rem; /* 对应 Tailwind 的 text-lg */
+      font-weight: 500; /* 对应 Tailwind 的 font-medium */
+      color: #2d3748; /* 对应 Tailwind 的 text-gray-800 */
+  }
+
+  /* 英文文本样式 */
+  .en {
+      font-size: 1rem; /* 对应 Tailwind 的 text-base */
+      color: #a0aec0; /* 对应 Tailwind 的 text-gray-500 */
+  }
+</style>
+
