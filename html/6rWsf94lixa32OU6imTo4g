@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script>
+</head>
+<body>
+  <div class="container">
+    <ul>
+<li class="ch">工业写实风格的轨道交通联锁表逻辑示意图，画面呈现高精度工程制图质感，背景为深灰色的金属质感面板，详细标注了信号机设备、复杂的进路路径以及联锁逻辑约束关系。采用冷色调的灯光渲染，增强金属设备的立体感，线条清晰锐利，符合专业铁路信号控制系统设计的视觉风格，光影过渡自然，如同真实的操作终端界面。</li>
+<li class="en">Industrial realistic style interlocking table logic diagram for railway signaling, featuring a high-precision engineering blueprint aesthetic on a dark gray metallic background. Clearly labeled signal equipment, intricate route paths, and interlocking constraint relationships are presented with professional clarity. The composition uses cool-toned lighting to emphasize the 3D depth of the control hardware, with sharp, crisp lines that reflect professional rail signal control system design, natural lighting transitions, resembling a real-world high-end control terminal interface.</li>
+</ul>
+<hr/><ul>
+<li class="ch">工业化写实效果的铁路联锁控制逻辑示意图，以高分辨率的工业渲染图形式展示，画面中心为清晰的轨道进路图表，标注有各类信号机状态、区间联锁约束逻辑，背景融入柔和的工业机械纹理。细节处展现了复杂的电气线路图设计，色调严谨且专业，整体光感平衡，视觉呈现出一种高度精确的工程化美学，仿佛置身于现代化的铁路综合调度指挥中心。</li>
+<li class="en">Industrial-grade realistic visualization of a railway interlocking control logic diagram, showcased as a high-resolution 3D render. The center features a crystal-clear track route layout, with labeled signal states and inter-segment interlocking logic constraints. The background incorporates subtle industrial mechanical textures. Detailed electrical schematics are displayed with professional color grading and balanced lighting, creating a highly precise engineering aesthetic, capturing the atmosphere of a modern railway integrated dispatch and command center.</li>
+</ul>
+<hr/><ul>
+<li class="ch">高度写实的工业风格联锁逻辑示意图，采用超清写实渲染技术，展示轨道信号设备、联锁路径及逻辑联动。画面采用典型的工业蓝灰色调，金属部件的反射效果逼真，文字标签和指示符号精准锐利。不仅展示了逻辑流程图，还表现出金属面板的材质感和深度，整体设计感兼具功能性与艺术性，仿佛是来自先进交通控制系统中的核心显示画面，细节丰富且层次分明。</li>
+<li class="en">Hyper-realistic industrial-style interlocking logic diagram using ultra-clear rendering techniques to display track signaling equipment, interlocking paths, and logical interactions. The image employs a quintessential industrial blue-gray palette, with realistic reflections on metallic components and sharp, precise text labels and symbols. It effectively illustrates logical workflows while highlighting the texture and depth of the metallic console, blending functionality with artistic design as if captured directly from the core display screen of an advanced traffic control system with rich, layered details.</li>
+</ul>
+<hr/>
+  </div>
+</body>
+</html>
+<style>
+  /* 全局样式 */
+  body {
+      font-family: 'Inter', sans-serif; /* 使用 Inter 字体保持简洁外观 */
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      /* 调整背景渐变色，使其与内容区域有更好区分度 */
+      background: linear-gradient(to bottom right, #e0f2f7, #e8f5e9); /* 从浅蓝色到浅绿色的渐变 */
+      margin: 0; /* 确保没有默认外边距 */
+  }
+
+  /* 容器样式 */
+  .container {
+      background-color: #ffffff; /* 对应 Tailwind 的 bg-white */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* 对应 Tailwind 的 shadow-lg */
+      border-radius: 0.75rem; /* 对应 Tailwind 的 rounded-xl */
+      padding: 2rem; /* 对应 Tailwind 的 p-8 */
+      max-width: 70vw; /* 将最大宽度设置为屏幕宽度的70% */
+      width: 100%; /* 确保在小屏幕上也能自适应 */
+  }
+
+  /* 标题样式 */
+  h1 {
+      font-size: 1.875rem; /* 对应 Tailwind 的 text-3xl */
+      font-weight: 600; /* 对应 Tailwind 的 font-semibold */
+      color: #4a5568; /* 对应 Tailwind 的 text-gray-700 */
+      margin-bottom: 1.5rem; /* 对应 Tailwind 的 mb-6 */
+      text-align: center; /* 对应 Tailwind 的 text-center */
+  }
+
+  /* 列表容器样式 */
+  ul {
+      list-style: none; /* 移除默认列表点 */
+      padding: 0;
+      margin: 0;
+  }
+
+  /* 列表项样式 */
+  li {
+      background-color: #f9fafb; /* 对应 Tailwind 的 bg-gray-50 */
+      transition: background-color 0.2s ease; /* 对应 Tailwind 的 transition-colors duration-200 */
+      border-radius: 0.5rem; /* 对应 Tailwind 的 rounded-lg */
+      padding: 1rem; /* 对应 Tailwind 的 p-4 */
+      display: flex; /* 对应 Tailwind 的 flex */
+      justify-content: space-between; /* 对应 Tailwind 的 justify-between */
+      align-items: center; /* 对应 Tailwind 的 items-center */
+      margin-bottom: 1rem; /* 对应 Tailwind 的 space-y-4，为每个 li 增加间距 */
+  }
+
+  li:last-child {
+      margin-bottom: 0; /* 最后一个 li 不加底部间距 */
+  }
+
+  li:hover {
+      background-color: #f3f4f6; /* 对应 Tailwind 的 hover:bg-gray-100 */
+  }
+
+  /* 中文文本样式 */
+  .ch {
+      font-size: 1.125rem; /* 对应 Tailwind 的 text-lg */
+      font-weight: 500; /* 对应 Tailwind 的 font-medium */
+      color: #2d3748; /* 对应 Tailwind 的 text-gray-800 */
+  }
+
+  /* 英文文本样式 */
+  .en {
+      font-size: 1rem; /* 对应 Tailwind 的 text-base */
+      color: #a0aec0; /* 对应 Tailwind 的 text-gray-500 */
+  }
+</style>
+
